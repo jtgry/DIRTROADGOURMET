@@ -10,7 +10,7 @@ title: Dirt Road Gourmet
 email: tgray.it@gmail.com
 description: The Dirt Road Gourmet Is a small USDA food manufacturing plant dedicated to providing frozen gourmet hand made casseroles in convenient locations. After hours of research, the owners found that Americans prefer to eat at home for their evening meal. Due to limited time and limited choices, they found that most people select a sack of burgers, barbeque sandwiches or pizza and the family is often unfulfilled by this offering.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://localhost:4000" # the base hostname & protocol for your site
+url: "http://dirtroadgourmet.com" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
 
