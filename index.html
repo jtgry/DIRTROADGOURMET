@@ -1,0 +1,48 @@
+---
+layout: home
+---
+<article>
+  {% for block in site.home %}
+  {% if block.type == "block-feature-text" %}
+  <section class="block-feature" id="learnmore">
+    <h2 class="block-feature-title">{{ block.title }}</h2>
+      <div class="container">
+        <div class="block-feature-text">
+          {{ block.content }}
+        </div>
+      </div>
+    </div>
+  </section>
+  {% endif %}
+  {% if block.type == "block-feature-image" %}
+  <section class="block-feature-image" style="background-image:linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url({{ block.image_path }});">
+  </section>
+  {% endif %}
+  {% if block.type == "block-banner" %}
+  <section class="block-banner" style="background-image:linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url({{ block.image_path }});">
+    <div class="vertical">
+      <div class="container">
+        <h2 class="block-banner-header">{{ block.title }}</h2>
+        <p class="block-banner-text">{{ block.content | strip_html }}</p>
+      </div>
+    </div>
+  </section>
+  {% endif %}
+  {% if block.type == "block" %}
+  <section class="block">
+    <div class="block-image {% if block.image_alignment == "right" %}pull-right{% endif %}" style="background-image:linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url({{ block.image_path }});">
+    </div>
+    <div class="block-content">
+      <div class="block-text vertical">
+        <div class="container">
+          <h2 class="block-title">{{ block.title }}</h2>
+          <hr />
+          {{ block.content }}
+        </div>
+      </div>
+    </div>
+  </section>
+  {% endif %}
+  {% endfor %}
+  
+</article>

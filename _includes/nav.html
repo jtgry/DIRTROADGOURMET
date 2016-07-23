@@ -1,0 +1,38 @@
+<nav class="nav fade-in-slow">
+  <div class="nav-title">
+    <a href="{{ site.url }}">{{ site.title }}</a>
+  </div>
+  <div class="nav-items">
+    <ul>
+      {% for page in site.pages %}
+        {% if page.menu == "true" %}
+          <li>
+            <a href="{{ page.url }}">{{ page.title }}</a>
+          </li>
+        {% endif %}
+      {% endfor %}
+          <li>
+            <a href="/journal">Journal</a>
+          </li>
+    </ul>
+  </div>
+  <a href="#" class="nav-button" id="navButton">
+    <span class="burger-icon"></span>
+  </a>
+</nav>
+<nav class="mobile-nav">
+  <div class="mobile-nav-items vertical">
+    <ul>
+      {% for page in site.pages %}
+        {% if page.menu == "true" %}
+          <li>
+            <a href="{{ page.url }}">{{ page.title }}</a>
+          </li>
+        {% endif %}
+      {% endfor %}
+          <li>
+            <a href="/journal">Journal</a>
+          </li>
+    </ul>
+  </div>
+</nav>

@@ -1,0 +1,125 @@
+.block{
+
+}
+.block-feature-image{
+  display: table;
+  width: 100%;
+  min-height: 50vw;
+  max-height: 50vh;
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: center;
+}
+.block-feature-title{
+  font-size: 300%;
+  letter-spacing: 1rem;
+  text-transform: uppercase;
+  @media (max-width: $phone) {
+    font-size:  200%;
+  }
+}
+.block-feature{
+  display: table;
+  width: 100%;
+  text-align: center;
+  margin: $spacing-unit auto;
+}
+.block-feature-text{
+  width: 100%;
+  text-align: left;
+  @media (max-width: $laptop) {
+    width: 100%;
+    margin: 0;
+  }
+}
+.block-banner{
+  display: table;
+  width: 100%;
+  min-height: 50vw;
+  max-height: 50vh;
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: center;
+
+  h2.block-banner-header{
+    font-size: 400%;
+    letter-spacing: 1rem;
+    text-transform: uppercase;
+    color: $color-white;
+    @media (max-width: $phone) {
+      font-size:  200%;
+    }
+  }
+  .block-banner-text{
+    color: $color-white;
+  }
+}
+.block-image{
+  display: table;
+  width: 50%;
+  min-height: 50vw;
+  max-height: 50vw;
+  height: 50vw;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: center;
+  @include span(1/2);
+  @media (max-width: $laptop) {
+    @include stack();
+    margin-bottom: $spacing-unit / 2;
+  }
+}
+.block-content{
+  display: table;
+  background: $color-off-white;
+  width: 50%;
+  min-height: 50vw;
+  max-height: 50vw;
+  height: 50vw;
+  overflow-y: hidden;
+  @include span(1/2);
+  @media (max-width: $laptop) {
+    @include stack();
+    display: table;
+    margin-bottom: $spacing-unit / 2;
+  }
+}
+.block-text{
+  font-size: 80%;
+  text-align: center;
+  h2{
+    text-transform: uppercase;
+    font-size: 300%;
+    letter-spacing: 1rem;
+  }
+  hr{
+    width: 5em;
+    height: 3px;
+    margin: $spacing-unit / 2 auto;
+    background: $color-grey-light;
+  }
+  @media (max-width: $tablet) {
+    margin: 0;
+    padding: 0;
+  }
+}
+.block-title{
+  text-align: center;
+}
