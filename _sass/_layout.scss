@@ -119,19 +119,19 @@ h1.header-sub-title{
   );
 }
 h1.page-title{
-  font-size: 400%;
+  font-size: 300%;
   text-transform: uppercase;
-  letter-spacing: 2rem;
+  letter-spacing: 1rem;
   color: $color-white;
   @include fadeIn(
     $delay: 1.5s
   );
 }
 h1.post-header-title{
-  font-size: 400%;
+  font-size: 300%;
   text-transform: uppercase;
   text-align: center;
-  letter-spacing: 2rem;
+  letter-spacing: 1rem;
   color: $color-black;
   @include fadeIn(
     $delay: 1s
