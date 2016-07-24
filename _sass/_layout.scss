@@ -123,7 +123,6 @@ h1.page-title{
   text-transform: uppercase;
   letter-spacing: 2rem;
   color: $color-white;
-  font-style: italic;
   @include fadeIn(
     $delay: 1.5s
   );
@@ -134,7 +133,6 @@ h1.post-header-title{
   text-align: center;
   letter-spacing: 2rem;
   color: $color-black;
-  font-style: italic;
   @include fadeIn(
     $delay: 1s
   );
