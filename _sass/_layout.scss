@@ -217,6 +217,7 @@ button,.button,a.button{
   display: inline-block;
   margin-top: $spacing-unit / 3;
   text-decoration: none;
+  -webkit-appearance:none ;
 }
 button,.button,a.button{
   background: $color-brand;
