@@ -71,7 +71,7 @@
     display: inline-block;
   }
 }
-@import "../burger";
+@import "burger";
 .burger-icon {
 	@include burger(25px, 2px, 5px, $color-black);
 }
