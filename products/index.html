@@ -1,0 +1,27 @@
+---
+layout: journal
+---
+<header class="page-header" style="background-image:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url(/images/greentomato.jpg);">
+  <div class="vertical">
+    <div class="container">
+      <h1 class="page-title">Products</h1>
+    </div>
+  </div>
+</header>
+<section class="block-featured-posts">
+    {% for product in site.products %}
+      {% capture modulo %}{{ forloop.index0 | mod:3 }}{% endcapture %}
+        {% if modulo == '0' or forloop.first %}
+          <div class="block-featured-posts">
+        {% endif %}
+          <div class="block-featured-post{{ cycle 'alpha', '', 'omega' }}">
+            <div class="block-featured-post-image" style="background-image:linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url({{ product.image_path }});"></div>
+            <h4 class="block-featured-post-title">{{ product.title }}</h4>
+            <p class="block-featured-post-content">{{ product.content | strip_html | truncate: 160 }}</p>
+            <a class="button" href="{{ product.url }}">Learn More</a>
+          </div>
+        {% if modulo == '2' or forloop.last %}
+        </div>
+        {% endif %}
+    {% endfor %}
+</section>

@@ -1,33 +1,23 @@
 $(document).ready(function () {
-  $(document).on("scroll", onScroll);
+  var menuButton = document.getElementById('navButton');
+  menuButton.addEventListener('click', function (e) {
+      menuButton.classList.toggle('is-active');
+      e.preventDefault();
+  });
+  $('.nav-button').click(function() {
+    $(".mobile-nav").fadeToggle(500);
+    $(".nav").toggleClass("nav-transparent");
+  });
+  $(window).on('scroll',function() {
+      if ($(this).scrollTop() > 400) {
+        $(".nav").removeClass("fade-in-slow");
+        $(".nav").removeClass("nav-up");
+        $(".nav").addClass("nav-down");
+      }
+      else {
+      $(".nav").addClass("nav-fixed");
+      $(".nav").removeClass("nav-up");
 
-    //smoothscroll
-    $('a[href^="#"]').on('click', function (e) {
-        e.preventDefault();
-        $(document).off("scroll");
-
-        var target = this.hash,
-            menu = target;
-        $target = $(target);
-        $('html, body').stop().animate({
-            'scrollTop': $target.offset().top-122
-        }, 500, 'swing', function () {
-            window.location.hash = target;
-            $(document).on("scroll", onScroll);
-        });
+		  }
     });
-    function onScroll(event){
-    var scrollPos = $(document).scrollTop();
-    $('.nav-items a').each(function () {
-        var currLink = $(this);
-        var refElement = $(currLink.attr("href"));
-        if (refElement.position().top-122 <= scrollPos && refElement.position().top-122 + refElement.height() > scrollPos) {
-            $('.nav-items ul li a').removeClass("active");
-            currLink.addClass("active");
-        }
-        else{
-            currLink.removeClass("active");
-        }
-        });
-    }
 });

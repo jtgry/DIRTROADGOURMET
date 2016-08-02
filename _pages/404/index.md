@@ -1,7 +1,7 @@
 ---
 layout: page
 title: We're Lost!
-permalink: /404/
+permalink: /404.html
 image_path: "/images/cornfield.jpg"
 ---
 <p class="post-tag">404</p>

@@ -1,0 +1,43 @@
+
+.site-footer{
+  width: 100%;
+  font-size: 80%;
+  float: left;
+}
+.social-bar{
+  background: $color-grey-light;
+  width: 100%;
+  text-align: center;
+  padding: 3em 0;
+  line-height: 0;
+
+}
+.social-item-container{
+  margin: 0;
+}
+.social-item{
+  display: inline-block;
+  font-family: $alt-font-family;
+  text-transform: uppercase;
+  margin: 0 1em;
+}
+
+.footer-content{
+  background: $color-brand;
+  text-align: center;
+  padding: 4em 0;
+  p{
+    color: $color-white;
+    text-transform: uppercase;
+    font-family: $header-font-family;
+    letter-spacing: .3em;
+    margin-bottom: $spacing-unit / 4;
+  }
+}
+a.footer-title{
+  color: $color-white;
+  text-transform: uppercase;
+  font-family: $header-font-family;
+  letter-spacing: .3em;
+  text-decoration: none;
+}

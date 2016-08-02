@@ -4,11 +4,12 @@ layout: home
 <article>
   {% for block in site.home %}
   {% if block.type == "block-feature-text" %}
-  <section class="block-feature" id="learnmore">
+  <section class="block-feature">
     <h2 class="block-feature-title">{{ block.title }}</h2>
       <div class="container">
         <div class="block-feature-text">
           {{ block.content }}
+          <a class="button" href="/about">Learn More</a>
         </div>
       </div>
     </div>
@@ -25,6 +26,24 @@ layout: home
         <h2 class="block-banner-header">{{ block.title }}</h2>
         <p class="block-banner-text">{{ block.content | strip_html }}</p>
       </div>
+    </div>
+  </section>
+  {% endif %}
+  {% if block.type == "block-featured-posts" %}
+  <section class="block-featured-posts">
+    <div class="">
+      <h2 class="block-title">{{ block.title }}</h2>
+      <hr />
+      {% for product in site.products %}
+        {% if product.featured == "true" %}
+          <div class="block-featured-post">
+            <div class="block-featured-post-image" style="background-image:linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url({{ product.image_path }});"></div>
+            <h3 class="block-featured-post-title">{{ product.title }}</h3>
+            <p class="block-featured-post-content">{{ product.content | strip_html | truncate: 240 }}</p>
+            <a class="button" href="{{ product.url }}">Learn More</a>
+          </div>
+        {% endif %}
+      {% endfor %}
     </div>
   </section>
   {% endif %}

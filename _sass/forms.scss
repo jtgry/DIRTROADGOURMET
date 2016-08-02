@@ -1,3 +1,7 @@
+input, select, textarea{
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent; /* For some Androids */
+}
 label.control-label {
   font-family: $alt-font-family;
   font-size: 120%;
@@ -17,7 +21,6 @@ input.form-control {
   webkit-box-shadow: none;
   box-shadow: none;
   transition: all .2s ease-in-out;
-
 }
 select.form-control {
   height:1.8em;
@@ -30,7 +33,6 @@ select.form-control {
   border-bottom: 2px solid rgba(0,0,0,0.1);
   webkit-box-shadow: none;
   box-shadow: none;
-
 }
 select option{
     font-size: 1.5rem;
@@ -139,9 +141,7 @@ input[type=checkbox],input[type=radio] {
   z-index: 1000;
   -webkit-box-shadow: none;
   box-shadow: none;
-
 }
-
 input[type=checkbox]:hover,input[type=radio]:hover { background: #fafafa; }
 
 input[type=checkbox]:checked,input[type=radio]:checked { background: #fafafa; }
@@ -159,9 +159,7 @@ input[type=checkbox]:checked::before,input[type=radio]:checked::before {
   border: 0;
   -webkit-box-shadow: none;
   box-shadow: none;
-
 }
-
 input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
     outline: none;
     outline: 0;

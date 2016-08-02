@@ -24,6 +24,9 @@ collections:
     output: true
   posts:
     permalink: journal/:path/
+  products:
+    permalink: products/:path/
+    output: true
 
 sass:
     load_paths:

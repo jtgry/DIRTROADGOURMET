@@ -1,9 +1,12 @@
-<nav class="nav fade-in-slow">
-  <div class="nav-title">
+<nav id="nav" class="nav fade-in-slow">
+  <div class="nav-title vertical">
     <a href="{{ site.url }}">{{ site.title }}</a>
   </div>
   <div class="nav-items">
     <ul>
+      <li>
+        <a href="/products">Products</a>
+      </li>
       {% for page in site.pages %}
         {% if page.menu == "true" %}
           <li>
@@ -11,18 +14,18 @@
           </li>
         {% endif %}
       {% endfor %}
-          <li>
-            <a href="/journal">Journal</a>
-          </li>
     </ul>
+    <a href="#" class="nav-button" id="navButton">
+      <span class="burger-icon"></span>
+    </a>
   </div>
-  <a href="#" class="nav-button" id="navButton">
-    <span class="burger-icon"></span>
-  </a>
 </nav>
 <nav class="mobile-nav">
   <div class="mobile-nav-items vertical">
-    <ul>
+    <ul class="vertical">
+      <li>
+        <a href="/products">Products</a>
+      </li>
       {% for page in site.pages %}
         {% if page.menu == "true" %}
           <li>
@@ -30,9 +33,6 @@
           </li>
         {% endif %}
       {% endfor %}
-          <li>
-            <a href="/journal">Journal</a>
-          </li>
     </ul>
   </div>
 </nav>

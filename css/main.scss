@@ -19,7 +19,7 @@ $spacing-unit:     4rem;
 $color-black:      rgba(30,30,30,0.9);
 $color-white:      rgba(255,255,255,0.95);
 $color-off-white:  rgba(252,252,252,0.9);
-$color-brand:      rgba(30,30,30,0.9);
+$color-brand:      #4B5942;
 $color-transparent:rgba(0,0,0,0);
 $color-grey:       rgba(150,150,150,0.9);
 $color-grey-light: lighten($color-grey, 25%);
@@ -58,6 +58,7 @@ $hd:               1800px;
         "layout",
         "blocks",
         "forms",
+        "footer",
         "util",
         "syntax-highlighting"
 ;
