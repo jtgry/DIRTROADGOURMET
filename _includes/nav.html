@@ -5,15 +5,17 @@
   <div class="nav-items">
     <ul>
       <li>
+        <a href="/products">About</a>
+      </li>
+      <li>
         <a href="/products">Products</a>
       </li>
-      {% for page in site.pages %}
-        {% if page.menu == "true" %}
-          <li>
-            <a href="{{ page.url }}">{{ page.title }}</a>
-          </li>
-        {% endif %}
-      {% endfor %}
+      <li>
+        <a href="/products">Locations</a>
+      </li>
+      <li>
+        <a href="/products">Contact</a>
+      </li>
     </ul>
     <a href="#" class="nav-button" id="navButton">
       <span class="burger-icon"></span>
@@ -24,15 +26,17 @@
   <div class="mobile-nav-items vertical">
     <ul class="vertical">
       <li>
+        <a href="/products">About</a>
+      </li>
+      <li>
         <a href="/products">Products</a>
       </li>
-      {% for page in site.pages %}
-        {% if page.menu == "true" %}
-          <li>
-            <a href="{{ page.url }}">{{ page.title }}</a>
-          </li>
-        {% endif %}
-      {% endfor %}
+      <li>
+        <a href="/products">Locations</a>
+      </li>
+      <li>
+        <a href="/products">Contact</a>
+      </li>
     </ul>
   </div>
 </nav>
