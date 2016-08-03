@@ -152,6 +152,9 @@ h1.page-title{
   @include fadeIn(
     $delay: 1.5s
   );
+  @media (max-width: $tablet) {
+    font-size: 200%;
+  }
 }
 h1.post-header-title{
   font-size: 400%;
@@ -163,6 +166,9 @@ h1.post-header-title{
   @include fadeIn(
     $delay: 1s
   );
+  @media (max-width: $tablet) {
+    font-size: 200%;
+  }
 }
 .post-item{
   margin-bottom: $spacing-unit / 2;
