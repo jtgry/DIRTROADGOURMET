@@ -74,10 +74,10 @@
   @media (max-width: $tablet) {
     display: inline-block;
   }
-  .cc-active {
-    border-bottom: none;
+}
+a#navButton {
+    border: none;
     pointer-events: auto;
-  }
 }
 @import "burger";
 .burger-icon {
