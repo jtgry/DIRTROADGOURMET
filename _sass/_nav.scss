@@ -32,9 +32,13 @@
   float: left;
   font-family: $header-font-family;
   letter-spacing: .3em;
-  padding: 2em 0;
+  padding: 1em 0;
   padding-left: 20px;
   text-decoration: none;
+}
+.nav-logo{
+  width: auto;
+  height: 2em;
 }
 .nav-items{
   display: block;
@@ -111,4 +115,8 @@
 }
 .mobile-nav-items a:hover{
   text-decoration: none;
+}
+.cc-active {
+  border-bottom: 4px solid $color-brand;
+  pointer-events: none;
 }
