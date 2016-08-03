@@ -2,7 +2,7 @@
 layout: page
 title: We're Lost!
 permalink: /404.html
-image_path: "/images/cornfield.jpg"
+image_path: "/images/greentomato.jpg"
 ---
 <p class="post-tag">404</p>
 <div class="page-content">
