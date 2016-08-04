@@ -8,7 +8,7 @@ layout: journal
     </div>
   </div>
 </header>
-<section class="post block-featured-posts">
+<section class="post">
     {% for product in site.products %}
       {% capture modulo %}{{ forloop.index0 | mod:3 }}{% endcapture %}
         {% if modulo == '0' or forloop.first %}
