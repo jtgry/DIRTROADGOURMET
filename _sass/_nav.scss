@@ -62,11 +62,11 @@
 .nav-items a{
   padding: 2em 1em;
   border-bottom: 4px solid $color-transparent;
+  pointer-events: auto;
 }
 .nav-items a:hover{
   text-decoration: none;
   border-bottom: 4px solid $color-brand;
-  pointer-events: auto;
 }
 .nav-button {
 	display: none;
