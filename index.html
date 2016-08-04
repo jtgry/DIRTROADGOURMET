@@ -37,7 +37,7 @@ layout: home
       {% for product in site.products %}
         {% if product.featured == "true" %}
           <div class="block-featured-post">
-            <div class="block-featured-post-image" style="background-image:linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url({{ product.image_path }});"></div>
+            <a href="{{ product.url }}"><div class="block-featured-post-image" style="background-image:linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url({{ product.image_path }});"></div></a>
             <h3 class="block-featured-post-title">{{ product.title }}</h3>
             <p class="block-featured-post-content">{{ product.content | strip_html | truncate: 240 }}</p>
             <a class="button" href="{{ product.url }}">Learn More</a>

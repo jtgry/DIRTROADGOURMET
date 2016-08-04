@@ -61,9 +61,11 @@
 }
 .nav-items a{
   padding: 2em 1em;
+  border-bottom: 4px solid $color-transparent;
 }
 .nav-items a:hover{
   text-decoration: none;
+  border-bottom: 4px solid $color-brand;
 }
 .nav-button {
 	display: none;
@@ -119,6 +121,7 @@ a#navButton {
 }
 .mobile-nav-items a:hover{
   text-decoration: none;
+  border-bottom: 4px solid $color-brand;
 }
 .cc-active {
   border-bottom: 4px solid $color-brand;
