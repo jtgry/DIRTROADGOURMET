@@ -120,7 +120,7 @@ li {
  */
 h1, h2, h3, h4, h5, h6 {
     font-weight: $base-font-weight;
-    font-family: $header-font-family;
+    font-family: $alt-font-family;
 }
 
 /**
@@ -158,15 +158,22 @@ hr {
  * Blockquotes
  */
 blockquote {
+    width: 120%;
+    margin-left: -10%;
     color: $color-grey;
-    border-left: 4px solid $color-grey-light;
-    padding-left: $spacing-unit / 2;
-    font-size: 18px;
-    letter-spacing: -1px;
+    font-size: 120%;
     font-style: italic;
-
+    font-family: $header-font-family;
+    text-align: center;
     > :last-child {
         margin-bottom: 0;
+    }
+    p{
+      font-family: $header-font-family;
+    }
+    @media (max-width: $tablet) {
+      width: 100%;
+      margin-left: 0;
     }
 }
 

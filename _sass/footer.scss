@@ -3,6 +3,7 @@
   width: 100%;
   font-size: 80%;
   float: left;
+  border-top: 2px solid $color-grey-light;
 }
 .social-bar{
   background: $color-grey-light;
@@ -23,9 +24,8 @@
 }
 
 .footer-content{
-  background: $color-brand;
   text-align: center;
-  padding: 4em 0;
+  padding: 5em 0 1em;
   p{
     color: $color-white;
     text-transform: uppercase;
@@ -34,10 +34,28 @@
     margin-bottom: $spacing-unit / 4;
   }
 }
-a.footer-title{
-  color: $color-white;
+.footer-link-container{
+  margin: 0;
+  padding-bottom: $spacing-unit / 2;
+}
+.footer-item{
+  display: inline-block;
+  font-family: $alt-font-family;
   text-transform: uppercase;
-  font-family: $header-font-family;
-  letter-spacing: .3em;
+  margin: 0 1em;
+}
+a.footer-item-link{
+color: $color-black;
+}
+.footer-logo{
+  margin-top: -.5em;
+  height: 4em;
+  width: auto;
+}
+a.footer-title{
+  color: $color-black;
+  text-transform: uppercase;
+  font-family: $alt-font-family;
+  letter-spacing: .1em;
   text-decoration: none;
 }
