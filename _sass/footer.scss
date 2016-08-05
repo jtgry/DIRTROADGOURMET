@@ -47,6 +47,10 @@
 a.footer-item-link{
 color: $color-black;
 }
+a.footer-item-link.cc-active{
+  border-bottom: none;
+  pointer-events: auto;
+}
 .footer-logo{
   margin-top: -.5em;
   height: 4em;
