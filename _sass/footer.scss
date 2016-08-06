@@ -51,11 +51,18 @@ a.footer-item-link.cc-active{
   border-bottom: none;
   pointer-events: auto;
 }
+.footer-logo-container{
+  display: inline-block;
+  @media (max-width: $tablet) {
+    display: none;
+  }
+}
 .footer-logo{
   margin-top: -.5em;
   height: 4em;
   width: auto;
 }
+
 a.footer-title{
   color: $color-black;
   text-transform: uppercase;
