@@ -15,8 +15,8 @@ $(document).ready(function () {
         $(".nav").addClass("nav-down");
       }
       else {
-      $(".nav").addClass("nav-fixed");
-      $(".nav").removeClass("nav-up");
+        $(".nav").removeClass("nav-down");
+        $(".nav").removeClass("nav-up");
 
 		  }
     });
