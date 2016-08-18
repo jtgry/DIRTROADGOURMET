@@ -7,7 +7,7 @@ menu: "true"
 ---
 The Dirt Road Gourmet is a small USDA food manufacturing plant dedicated to providing frozen gourmet hand made casseroles in convenient locations. After hours of research, the owners found that Americans prefer to eat at home for their evening meal. Due to limited time and limited choices, they found that most people select a sack of burgers, barbeque sandwiches or pizza and the family is often unfulfilled by this offering.
 
-Each casserole will serve a family of four. The casseroles are packed by hand and wrapped by hand in our HACCP approved, commercial kitchen located in Eclectic, Alabama. Following stringent food handling procedures, the casseroles arrive frozen in convenience stores, independent grocers, gift shops and gourmet.
+Each casserole will serve a family of four. The casseroles are packed by hand and wrapped by hand in our HACCP approved, commercial kitchen located in Eclectic, Alabama. Following stringent food handling procedures, the casseroles arrive frozen in convenience stores, independent grocers, gift shops and gourmet markets.
 
 The Dirt Road Gourmet takes its name from a reminiscent past. Remember the times you went on family vacations, and your parents took a wrong turn and you found yourself on a dirt road. There you would find the best barbeque, best lemon meringue pie, and the best ice cream… that is what we offer. We offer you the best-frozen casserole you can buy. We are in unexpected outlets but we’re not off the beaten path, we’re right in the pathway of your life.
 
