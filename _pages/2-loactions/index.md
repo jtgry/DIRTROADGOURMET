@@ -3,7 +3,7 @@ layout: page
 title: Locations
 permalink: /locations/
 image_path: "/images/greentomato.jpg"
-menu: "true"
+menu: "false"
 ---
 <section class="block-feature">
   <div class="container">
