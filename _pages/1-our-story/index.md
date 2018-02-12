@@ -2,9 +2,11 @@
 layout: page
 title: Our Story
 permalink: /our-story/
-image_path: "/images/greentomato.jpg"
-menu: "true"
+image_path: /images/greentomato.jpg
+menu: 'true'
 ---
+
+
 The Dirt Road Gourmet is a small USDA food manufacturing plant dedicated to providing frozen gourmet hand made casseroles in convenient locations. After hours of research, the owners found that Americans prefer to eat at home for their evening meal. Due to limited time and limited choices, they found that most people select a sack of burgers, barbeque sandwiches or pizza and the family is often unfulfilled by this offering.
 
 Each casserole will serve a family of four. The casseroles are packed by hand and wrapped by hand in our HACCP approved, commercial kitchen located in Eclectic, Alabama. Following stringent food handling procedures, the casseroles arrive frozen in convenience stores, independent grocers, gift shops and gourmet markets.
@@ -22,3 +24,5 @@ We exclusively use an aluminum pan made by Novelist Foil Products called Tuxedo.
 ### We are very involved in our community.
 
 We are active supporters of Children’s Harbor through donations of food items to events, catering for special events, and providing our casseroles to a family in need.
+
+[As Seen On WBRC-6](https://www.youtube.com/watch?v=itshtsEOHoc)
